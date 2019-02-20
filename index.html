@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>email validation</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="welcome.html">
+</head>
+<body>
+  <div class="container">
+    <h1>Login Form</h1>
+  <form onsubmit="return validate()" action="welcome.html">
+    <label>
+      Username
+      <input type="text" id="uname" placeholder="Enter Full Name">
+    </label>
+    <label>
+        Password
+        <input type="password" id="pass" placeholder="Enter Password">
+      </label>
+      <br>
+      <button type="submit">Log in</button>
+
+  </form>
+</div>
+
+<script>
+
+  function validate(){
+    var uname=document.getElementById("uname");
+    var uname=document.getElementById("pass");
+
+
+    if(uname.value.trim()==""||pass.value.trim()==""){
+      alert("Do not leave the field blank.")
+      return false;
+    }else{
+      return true;
+    }
+  }
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+body{
+  padding:0;
+  margin:0;
+  background:rgb(108, 54, 233);
+  color:#f8f8ff;
+  
+  font-family: comic sans ms;
+}
+label,input,textarea{
+  display: block;
+  width:100%;
+
+}
+.container{
+  width:50%;
+  
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  position: absolute;
+  
+  
+}
+.container h1{
+  text-align: center;
+  margin-bottom: 70px;
+}
+label{
+  font-size: 20px;
+  
+}
+.welcome-screen{
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-40%);
+  text-align: center;
+
+}
+.welcome-screen h1,h4{
+  padding:0;
+  margin:0;
+}
+input{
+  padding:15px 10px;
+  background: transparent;
+  color:#fff;
+  outline: none;
+  border:1px solid #f8f8ff;
+  margin:20px 0;
+}
+button{
+  padding:10px 15px;
+  background:#f8f8ff;
+  outline:none;
+  border:none;
+  color:#1a1a1a;
+  font-weight: bold;
+  width:30%;
+  margin:0 auto;
+  display: block;
+  
+}
+input::placeholder{
+  color: #ccc;
+  font-size:14px;
+  text-transform: capitalize;
+}
